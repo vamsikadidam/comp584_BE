@@ -15,4 +15,8 @@ public class Loan {
     public String loanType;
 
     public double loanAmount;
+    
+    @ManyToOne(cascade = {CascadeType.ALL})
+    @NotFound(action = NotFoundAction.IGNORE)
+    public Customer customer;
 }
