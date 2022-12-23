@@ -20,9 +20,7 @@ public class   Customer {
 
 	public String pan;
 
-	@OneToMany(cascade = {CascadeType.ALL})
-	@NotFound(action = NotFoundAction.IGNORE)
-	public Loan loan;
+	
 
 
 }
