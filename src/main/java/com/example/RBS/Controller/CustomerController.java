@@ -44,7 +44,7 @@ public class CustomerController {
 		for (Customer c : listcustomer) {
 			String cname = c.customerName;
 			if (cname.equals(custname)) {
-//				loan.customer = c;
+				loan.customer = c;
 			}
 		}
 		return new ResponseEntity<>(this.loanRepo.save(loan), HttpStatus.OK);
